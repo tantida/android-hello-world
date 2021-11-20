@@ -8,5 +8,6 @@ public class MainActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    AppCenter.start(getApplication(), "{Your App Secret}", Analytics.class, Crashes.class);
   }
 }
